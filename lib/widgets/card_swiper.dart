@@ -7,8 +7,8 @@ class CardSwiper extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final double appBarHeight = kToolbarHeight;
-    return Container(
+    const double appBarHeight = kToolbarHeight;
+    return SizedBox(
       width: double.infinity,
       height: size.height * 0.5 - appBarHeight,
       child: Swiper(
